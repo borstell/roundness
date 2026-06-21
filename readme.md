@@ -1,8 +1,3 @@
----
-title: "Cat Roundness"
-output: html_document
----
-
 # *My cat is so round ...*
 
 *How round is she?*
