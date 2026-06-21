@@ -9,7 +9,7 @@
 
 Today my cat was extra round, so I took a picture.
 
-![A photo of a tuxedo cat rolled up in a cat bed taken from above](figs/round_cat.png)
+<img src="figs/round_cat.png" height="400" alt="A photo of a tuxedo cat rolled up in a cat bed taken from above" />
 
 It made me wonder: *How round is she?*
 
@@ -31,8 +31,7 @@ I knew I would need to estimate a polygon shape from the photo, so I read the im
 
 Reading the coordinates into R again and plotting with [`{ggplot2}`](https://ggplot2.tidyverse.org/), we can see a pretty accurate albeit coarse polygon outline of my cat.
 
-![A photo of a tuxedo cat rolled up in a cat bed taken from above with a yellow line marking the outline of the cat](figs/cat.png)
-
+<img src="figs/cat.png" height="400" alt="A photo of a tuxedo cat rolled up in a cat bed taken from above with a yellow line marking the outline of the cat" />
 
 ## Step 3: Get the area and perimeter
 
@@ -62,7 +61,7 @@ What would a perfect circle look like if we would add an overlay to the original
 
 I again used the `{pracma}` package to estimate the midpoint of the polygon using the `poly_center()` function, which gives the following estimation:
 
-![A photo of a tuxedo cat rolled up in a cat bed taken from above with a yellow line marking the outline of the cat and a dot in the middle](figs/cat_midpoint.png)
+<img src="figs/cat_midpoint.png" height="400" alt="A photo of a tuxedo cat rolled up in a cat bed taken from above with a yellow line marking the outline of the cat and a dot in the middle" />
 
 This looks pretty reasonable. Where can we go from here?
 
@@ -70,11 +69,12 @@ I used the midpoint estimate to approximate the radius of the polygon by calcula
 
 Using the estimated midpoint and radius, I used the awesome [`{ggforce}`](https://ggforce.data-imaginist.com) to superimpose a circle onto the image:
 
-![A photo of a tuxedo cat rolled up in a cat bed taken from above with a yellow line marking the outline of the cat and a dot in the middle and an overlay of a perfect circle](figs/cat_overlay.png)
+<img src="figs/cat_overlay.png" height="400" alt="A photo of a tuxedo cat rolled up in a cat bed taken from above with a yellow line marking the outline of the cat and a dot in the middle and an overlay of a perfect circle" />
 
 And here is the same image of my cat, with just the perfect circle overlay:
 
-![A photo of a tuxedo cat rolled up in a cat bed taken from above with an overlay of a perfect circle](figs/cat_perfect.png)
+<img src="figs/cat_perfect.png" height="400" alt="A photo of a tuxedo cat rolled up in a cat bed taken from above with an overlay of a perfect circle" />
+
 
 ## Conclusion
 
