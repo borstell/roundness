@@ -81,3 +81,14 @@ And here is the same image of my cat, with just the perfect circle overlay:
 My cat is almost perfectly round, but of course she is simultaneously simply perfect.
 
 Oh, and the laundry finished an hour ago.
+
+
+## Bonus
+
+Since the [Wikipedia article on Roundness](https://en.wikipedia.org/wiki/Roundness) mentions that
+
+> The ISO definition of roundness is the ratio of the radii of inscribed to circumscribed circles, i.e. the maximum and minimum sizes for circles that are just sufficient to fit inside and to enclose the shape.
+
+I decided to try this approach as well. This requires the [`{sf}`](https://r-spatial.github.io/sf/index.html) package, which I'm still very much learning (but keep getting amazed by the functionality). The approach here ends up showing a slightly lower roundness value of about 0.89, which to be honest is still quite impressive.
+
+<img src="figs/cat_ratio.png" height="400" alt="A photo of a tuxedo cat rolled up in a cat bed taken from above with an overlay of an inner and outer circle" />
